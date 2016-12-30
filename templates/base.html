@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<title>{% block title %}{% endblock %}</title>
+	<meta charset="utf-8">
+	<meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    </head>
+    <body class="wrap">
+	<div class="grid">
+	    <ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/people">People</a></li>
+		<li><a href="/publications">Publications</a></li>
+		<li><a href="/projects">Projects</a></li>
+		<li><a href="/resources">Resources</a></li>
+	    </ul>
+	    {% block content %}
+	    {% endblock %}
+	</div>
+    </body>
+</html>
