@@ -1,4 +1,5 @@
 title: Interdependence in Governance and Policy (IGaP) Lab
+type: page
 
 ![](/static/igap.png)
 
