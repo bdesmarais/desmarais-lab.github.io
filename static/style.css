@@ -10,6 +10,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
 }
 article, aside, details, figure, figcaption, footer, header, hgroup, menu, nav, section { display: block }
+
 body {
     font: 18px/23px "Open Sans", sans-serif;
     line-height: 1.429;
@@ -88,35 +89,16 @@ li p { line-height: 21px }
 dt { }
 dd { margin-bottom: 3px }
 
-div.menu ul {
-  list-style: none;
-  background-color: #444;
-  text-align: center;
-  padding: 0;
-  margin: 0;
+div.block {
+    display: table;
+    padding-bottom: 20px;
+}
+img.block {
+    float: left;
+    padding: 10px 20px 20px 10px;
+    width: 25%;
+    height: auto;
 }
 
-div.menu li {
-  /* font-family: 'Oswald', sans-serif; */
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
-  border-bottom: 1px solid #888;
-}
- 
-div.menu a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  transition: .3s background-color;
-}
- 
-div.menu a:hover {
-  background-color: #005f5f;
-}
- 
-div.menu a.active {
-  background-color: #fff;
-  color: #444;
-  cursor: default;
+nav {
 }
