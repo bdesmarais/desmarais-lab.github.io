@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<title>
+GNU Make Tutorial
+</title>
+	<meta charset="utf-8">
+	<meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="../static/style.css" type="text/css">
+	<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<script type="text/x-mathjax-config">
+	 MathJax.Hub.Config({
+	     tex2jax: {
+		 inlineMath: [['$','$'], ['\\(','\\)']],
+		 displayMath: [['$$','$$'], ["\\[","\\]"]],
+		 processEscapes: true
+	     }, "HTML-CSS": { styles: {".MathJax .mo, .MathJax .mi": {color: "black"}},
+			      availableFonts: ["TeX"]
+	     }});
+	</script>
+    </head>
+    <body class="wrap">
+	<div class="grid">
+	    <nav>
+		<a href="../index.html">Home</a> |
+		<a href="../people/index.html">People</a> |
+		<a href="../publications/index.html">Publications</a> |
+		<a href="../projects/index.html">Projects</a> |
+		<a href="../resources/index.html">Resources</a>
+		<hr/>
+	    </nav>
+	    
+<h2>GNU Make Tutorial</h2>
+<h3>What is GNU Make?</h3>
+<p><a href="http://www.gnu.org/software/make/">GNU Make</a> is a tool that allows you to construct a <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">direct acyclic graph</a> of dependencies amongst the files in your data analysis project (check out the the <a href="https://en.wikipedia.org/wiki/Make_(software)">Wikipedia</a> article). Make was developed to handle the building of complex pieces of software composed of many source files that need to be compiled or run in a particular order. Often data analysis projects are quite complicated. You might, for example, scrape some data from the web, clean it, do some analysis on it, produce some plots, and then create a presentation and/or paper. Make allows you to provide a "recipe" that describes in what order files need to executed in order to produce a result (a cleaned data file, some figures, a log file, etc.). Each of these build procedures is executed in a seperate instance of your default shell. Makefiles are executed by simply calling <code>make</code> from the command line, or, less commonly, by referring to a specific makefile.</p>
+<p>Make is language agnostic. This is advantageous because, despite what some language zealots seem to believe, there is not usually one best tool for an entire project. Data analysis often involves shell scripting, a bit of <a href="http://www.r-project.org/">R</a>, <a href="http://www.python.org/">Python</a>, and who knows what else. <a href="http://www.stata.com/">STATA</a> is still quite dominant in many of the social sciences. Make can handle anything that can be executed from the command line (actually anything, if you use <a href="http://support.apple.com/kb/HT2488">automator</a> or something like it).</p>
+<h3>Reasons to Use Make</h3>
+<p>Make can encourage you to modularize your code. Rather than having one file <code>analysis.R</code> that cleans your data, estimates your model(s), and produces your plots, you can have them split up by task. This makes it easier for others to understand your code and for you to debug it. When you are using R in <a href="http://stat.ethz.ch/R-manual/R-devel/library/utils/html/BATCH.html">batch-mode</a> <code>.Rout</code> files are automatically produced, which is the output from the interpreter, making it easier to see what, if anything, went wrong. Modularizing your code in this manner usually necessitates writing intermediate results to file. For complex objects this can sometimes be a pain (though R makes it easy with <code>.RData</code> files, which are automatically produced when R is run in batch-mode).</p>
+<p>I think <a href="https://en.wikipedia.org/wiki/Literate_programming">literate programming</a>  (<a href="http://www.stat.uni-muenchen.de/~leisch/Sweave/">sweave</a>, <a href="http://yihui.name/knitr/">knitr</a>, and <a href="http://orgmode.org/worg/org-contrib/babel/">org-babel</a> are a few implementations) is great, but I am not convinced it actually makes it easier to reproduce results (most implementations are language specific, though org-babel is not). Using any of these tools makes building a document necessary to see the results of the data anlysis (or any of the intermediate products of the data analysis). The things you need to have installed to produce the document (some flavor of TeX and/or <a href="http://orgmode.org/">org-mode</a> and <a href="http://www.gnu.org/software/emacs/">Emacs</a>) are not installed by default on most systems with a Unix command line interface. Make is. With Make you can seperate your data analysis from the document which presents your analysis while retaining the automated integration between the two.</p>
+<h3>How to Use Make</h3>
+<p>The Make model is very easy to understand. There are things to be built (a target) and a list of commands that need to be executed to build said target. Make determines whether a command needs to be executed by checking if the time-modified stamp on the build target is greater than the time-modified stamp of any of the build dependencies. If that is the case, then the target is out of date and needs to be rebuilt. If not, then the build target does not need to be rebuilt, and the commands that need to be run to build the target are not executed. Suppose you've written a Python script that fetches some data, and writes a file, <code>raw.csv</code> to disk. You would write:</p>
+<div class="codehilite"><pre><span></span>raw.csv: get_data.py
+    python get_data.py
+</pre></div>
+
+
+<p>If <code>raw.csv</code> doesn't exist, or was modified at a later time than <code>get_data.py</code> (meaning that <code>get_data.py</code> has been modified since <code>raw.csv</code> was last produced) the command <code>python get_data.py</code> is run, which (re)generates <code>raw.csv</code>. More realistically you have a number of scripts working together. You might have a shell script that cleans the data, and some R scripts that run some analysis and produce a few plots. Note that the the commands listed below the build target must be indented using the tab character (though you can modify this).</p>
+<div class="codehilite"><pre><span></span>raw.csv: get_data.py
+    python get_data.py
+
+clean.csv: clean.sh raw.csv
+    <span class="nb">source</span> clean.sh
+
+model.Rout: model.R clean.csv
+    R CMD BATCH model.R
+
+plot.Rout: plot.R model.Rout
+    R CMD BATCH plot.R
+</pre></div>
+
+
+<p>Each build target is specified as reliant on the file that needs to be run to build it in addition to the files necessary to build its dependencies. It is only necessary to specify a first order dependence in this case. Say you've built the entire project, but then you go and change something in <code>get_data.py</code>. The next time you build the project this will trigger a rebuild of the Python data retrieving script, which will trigger a re-run of the cleaning shell script, and so on, resulting in a full rebuild. If, howver, you'd made a change in <code>clean.sh</code> then you would have triggered a re-run of the model and plotting scripts, but not the cleaning shell script.</p>
+<p>Variables (also called macros) are defined using the <code>:=</code> operator and accessed (expanded) using <code>$(var)</code>. There are actually other ways to define variables in Make (this is a "simply expanded variable"). See <a href="http://www.gnu.org/software/make/manual/make.html#Flavors">section 6.2</a> in the Make manual to read more about the different "flavors" of variables. Variables are <a href="https://en.wikipedia.org/wiki/Lazy_evaluation">lazily evaluated</a>, meaning that they are only expanded when they are actually called. When compiling a TeX document I will define a variable for the command, and then call it on the relevant dependencies.</p>
+<div class="codehilite"><pre><span></span>TEXCMD :<span class="o">=</span> pdflatex -interaction<span class="o">=</span>batchmode
+paper.pdf: paper.tex
+    <span class="k">$(</span>TEXCMD<span class="k">)</span> paper.tex
+</pre></div>
+
+
+<p>There are a number of special variables that Make uses. <code>$&lt;</code> expands to the first dependency. This is useful when you have to call commands that involve the same file several times, as you typically have to do with compiiling a TeX document. Assuming you've already defined <code>TEXCMD</code> as above:</p>
+<div class="codehilite"><pre><span></span>paper.pdf: paper.tex
+    <span class="k">$(</span>TEXCMD<span class="k">)</span> $&lt;
+    <span class="k">$(</span>TEXCMD<span class="k">)</span> $&lt;
+    bibtex *.aux
+    <span class="k">$(</span>TEXCMD<span class="k">)</span> $&lt;
+</pre></div>
+
+
+<p>This runs TeX twice, then bibtex (on the only <code>.aux</code> file that should be there), and then runs TeX another time for good measure. You can of course add your figures (or, better yet, the log file that is produced by your plotting script) as a dependency for your paper. Other special variables include <code>$@</code> which expands the build target, and <code>$?</code> which expands to any dependencies which have a time stamp more recent than the target.</p>
+<p>You can define dummy targets in addition to the variety already described. A dummy target is a target with no commands directly associated with it (it is sort of a meta-target). For example if you have a couple of scripts that involve data acquisition and cleaning, another few that involve data analysis, and a few that involve the presentation of results (paper, plot), then you might define a dummy for each of them. You can be even more meta if you want, and define a dummy target that depends on dummy targets. For example:</p>
+<div class="codehilite"><pre><span></span>all: data model paper
+data: raw.csv
+model: model.Rout
+paper: plot.Rout paper.pdf
+
+raw.csv: get_data.py
+    python get_data.py
+
+clean.csv: clean.sh raw.csv
+    <span class="nb">source</span> clean.sh
+
+model.Rout: model.R clean.csv
+    R CMD BATCH model.R
+
+plot.Rout: plot.R model.Rout
+    R CMD BATCH plot.R
+
+paper.pdf: paper.tex
+    <span class="k">$(</span>TEXCMD<span class="k">)</span> $&lt;
+    <span class="k">$(</span>TEXCMD<span class="k">)</span> $&lt;
+    bibtex *.aux
+    <span class="k">$(</span>TEXCMD<span class="k">)</span> $&lt;
+</pre></div>
+
+
+<p>Assuming that you've named the file "makefile" or "Makefile" or something like that, simply typing "make" at the command line while inside your project's directory will execute the build process. You can of course refer to a specific target, e.g. <code>make paper.pdf</code>. This is especially useful with the dummy targets that just discussed, as it is often the case that you'll want to rebuild only part of the whole.</p>
+<p>With  Make it will be both easier to manage your own work (especially if you "build" your projects on remote servers frequently) and easier for other people to reproduce it. To reiterate a bit, it will be easier to reproduce because your code will (hopefully) be more modular and easier to understand, because all the dependencies amongst your files will be explicitly stated, and you won't be tying the results from your analysis to the compiling (or whatever) of your presentation or paper. Since Make is distributed with just about every operating system that has a Unix shell (there is a version of Make for Windows), the dependency is usually fulfilled without any effort on the part of the user.</p>
+<p><a href="http://robjhyndman.com/hyndsight/makefiles/">Rob Hyndman</a> (a statistician interested in forecasting) also uses Make in much the same way. <a href="http://bost.ocks.org/mike/make/">Mike Bostock</a> also has a cool post about using Make. So does <a href="http://matt.might.net/articles/intro-to-make/">Matt Might</a>, who also points out that <a href="http://oreilly.com/catalog/make3/book/index.csp">O'Reilly</a> has an open-book on Make as well. The <a href="http://www.gnu.org/software/make/manual/make.html">manual</a> or manpages are the real authoritative source of information on the matter of course.</p>
+
+	</div>
+    </body>
+</html>

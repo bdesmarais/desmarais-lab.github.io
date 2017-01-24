@@ -4,7 +4,7 @@
 
 <ul>
 {% for page in pages %}
-    <li><a href="{{ page.path }}">{{ page.title }}</a></li>
+    <li><a href="{{ url_for('page', path=page.path) }}">{{ page.title }}</a></li>
     {% endfor %}
 </ul>
 
