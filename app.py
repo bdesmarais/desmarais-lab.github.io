@@ -12,8 +12,9 @@ app.config.from_object(__name__)
 flatpages = FlatPages(app)
 freezer = Freezer(app)
 app.config['FREEZER_DESTINATION'] = 'docs'
-app.config['FREEZER_BASE_URL'] = 'http://desmarais-lab.github.io/'
+app.config['FREEZER_BASE_URL'] = 'https://desmarais-lab.github.io/'
 app.config['FREEZER_RELATIVE_URLS'] = True
+FLATPAGES_MARKDOWN_EXTENSIONS = ['codehilite', 'footnotes', 'fenced_code']
 
 pages = [p for p in flatpages if p.meta.get('type') == 'resource']
 
@@ -41,6 +42,10 @@ def resources():
 def page(path):
     page = flatpages.get_or_404(path)
     return render_template('page.html', page=page)
+
+# @freezer.register_generator
+# def page_generator():
+#     yield '/make/'
 
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == "build":
