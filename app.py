@@ -11,7 +11,7 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 flatpages = FlatPages(app)
 freezer = Freezer(app)
-app.config['FREEZER_DESTINATION'] = 'docs'
+app.config['FREEZER_DESTINATION'] = '/'
 app.config['FREEZER_BASE_URL'] = 'https://desmarais-lab.github.io/'
 app.config['FREEZER_RELATIVE_URLS'] = True
 FLATPAGES_MARKDOWN_EXTENSIONS = ['codehilite', 'footnotes', 'fenced_code']
