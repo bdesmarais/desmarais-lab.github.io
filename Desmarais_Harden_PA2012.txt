@@ -1,0 +1,10 @@
+@article{Desmarais:2011pa,
+author = {Desmarais, Bruce A. and Harden, Jeffrey J.}, 
+title = {Comparing Partial Likelihood and Robust Estimation Methods for the Cox Regression Model}, 
+volume = {20}, 
+number = {1}, 
+pages = {113-135}, 
+year = {2012}, 
+journal = {Political Analysis} 
+}
+

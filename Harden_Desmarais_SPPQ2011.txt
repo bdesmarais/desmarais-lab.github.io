@@ -1,0 +1,9 @@
+@article{Harden:2011,
+Author = {Harden, Jeffrey J. and Bruce A. Desmarais},
+Title = {{Linear Models with Outliers: Choosing Between Conditional-Mean and Conditional-Median Methods}},
+Journal = {{State Politics \& Policy Quarterly}},
+Year = {{2011}},
+number={4},
+volume = {11},
+pages = {371--389}
+}

@@ -1,0 +1,164 @@
+<html>
+<head>
+<meta name="Keywords" content="desmarais, bruce, unc, political science, graduate student, candidate, political methodology, american politics, social networks, median regression, judicial politics, data mining, event history">
+<link rel="SHORTCUT ICON" href="images/CornellBigRed.png"> 
+<title>Bruce A. Desmarais - Ph.D. Candidate - UNC Chapel Hill - Political Science</title>
+
+<style type="text/css">
+<!--
+.textborder {
+border: 1px solid #000000;
+}
+-->
+
+h2 {background-image: url(bluehead.jpg); margin 0; padding 0}
+
+</style>
+
+</head>
+
+<h2>
+<body>
+
+<div id="page">
+<div id="content">
+<div id="header">
+
+Homepage |
+
+<a href="Bruce_Desmarais_cv.pdf">Research</a> |
+<a href="Bruce_Desmarais_cv.pdf">CV</a> |
+<a href="Bruce_Desmarais_cv.pdf">Software, Code and Data</a> | 
+<a href="contact.html">Interesting Links</a> 
+</div>
+<HR>
+</h2>
+<div id="main">
+<table>
+<tr>
+
+<td valign="top" width="75%">
+
+
+<table>
+<tr>
+<td valign="top" width="70%">
+<h3>Bruce A. Desmarais</h3>
+<p>
+<div id="smalltext">
+Ph.D. Candidate<br>
+UNC Chapel Hill<br>
+<a href="http://www.unc.edu/depts/polisci/">Department of Political Science</a><br>
+
+
+<br>
+<a href="contact.html">Contact info</a>
+</div>
+
+<h4>Research interests</h4>
+<p>
+<i>American Politics:</i> U.S. Supreme Court, Congressional Cosponsorship, Roll-Call Voting, Official Secrecy.
+<div id="smalltext"> 
+<i>Political Methodology:</i> Social Network Analysis, Event History Modeling, Robust Estimation, Machine Learning.</div>
+</p>
+
+
+
+<h4>Research Agenda</h4>
+<p>
+As an aspiring political methodologist, I have designed a research agenda in which I aim to advance the techniques political scientists use to understand the dynamics of interdependent political events. The substantive applications in my work are primarily to intra-institutional dynamics in the U.S - including U.S. Supreme Court Voting, Congressional Roll-Call Voting, and Congressional Cosponsorship. I have accumulated a secondary line of work on network phenomena in international relations. 
+</p>
+<p>
+An overarching theme in my work is a theoretical approach to the interdependence of outcomes across and within political institutions. In many fields of applied statistics, non-independence of observations in a study is treated as a nuisance introduced by sub-optimal research design. As a result, the methods developed to deal with dependent data tend to engage the interdendence to the minimum degree necessary to consistently estimate whatever marginal characteristics are of interest. In my dissertation, and related work, I (1) make the case that a full theoretical engagement with the form of dependence is essential to a comprehensive understanding of political phenomena, (2) develop algorithms that can be used to identify interesting types of interdependence in common discrete choice datasets, (3) propose models that can be used to estimate effects on both the marginal behavior of political actors and the dependence between them, and (4) demonstrate through applications how theoretical considerations of interdependence can improve the predictive performance of empirical models. 
+</p>
+
+
+</td>
+
+
+<td width="250" valign="top" >
+<img src="congpos.jpg" height="250" border=1>
+
+
+<!--
+<h5> </h5>
+<div id="smalltext">
+<p class="textborder">
+<ul type = "square">
+<li> </li>
+<li>text</li>
+<li>text</li>
+</ul>
+
+</p>
+-->
+</div>
+
+</td>
+</tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table>
+<tr>
+
+</tr>
+</table>
+
+<p>&nbsp;</p>
+
+
+<h2>SELECTED PROJECTS</h2>
+
+<tr><td>&nbsp;</td></tr>
+
+<table cellpadding="10">
+<tr>
+<td>
+
+<p>
+<img src="judcites.jpg" height="240" border=1 >
+</p>
+<p>
+<img src="judprlib.jpg" height="240" border=1 >
+</p>
+</td>
+<td width="400">
+<p><b>The Self-Correcting U.S. Supreme Court</b></p>
+<p>Many of the conservative U.S. Supreme Court decisions of the past three decades have been interpreted as negative responses to the liberal doctrine of the Warren Court. In these accounts  it is hypothesized that the Court has acted to counter the ideological extremity of its past, thus desirably updating the extant understanding of the law. The idea that the Court is an explicitly self-correcting institution has never been considered in the context of quantitative scholarship on Court dynamics. The Court operates with the objective of exercising optimal ideological influence on subsequent users of its doctrine. Moreover, those users respond to relevant bodies of legal policy and not <i>typically</i> single cases in isolation. The intersection of these facts produces a strong incentive for the Court to correct past ideological extremes. Empirical results show that the Court acts in a manner consistent with a self-correcting institution.
+</p>
+</td>
+</tr>
+
+<tr><td>&nbsp;</td></tr>
+
+<tr>
+<td>
+<p>
+<img src="avally.jpg" height="240" border=1>
+</p>
+<p>
+<img src="oth2item.jpg" height="240" border=1>
+</p>
+</td>
+<td width="400">
+<p><b>Model Improvement through Multivariate Error Analysis</b></p>
+<p>
+The systematic analysis of residuals from regression models has long been used to monitor many aspects of model fit. In models where the dependent variable consists of repeated collective choices, a common configuration in political science, a particularly informative residual concept is the <i>joint prediction error </i> (JPE). A JPE is a collective outcome that is poorly predicted by a discrete choice model. Analysis of these joint residuals (1) exposes dependence patterns that are inconsistent with the multivariate structure of the specified model, and (2) the intersection of the component parts in a JPE can indicate important explanatory variables that are missing. I derive an algorithm that finds JPEs in a discrete-choice dataset. Analysis of prediction errors is shown to improve empirical models from two published works, one on U.S. Supreme Court voting in the <i>American Political Science Review</i>, and another on the fulfillment of international defense alliances in the <i>American Journal of Political Science</i>.
+</p>
+</td>
+</tr>
+
+<tr><td>&nbsp;</td></tr>
+
+</table>
+
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
+

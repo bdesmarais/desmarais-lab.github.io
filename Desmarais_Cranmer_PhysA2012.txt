@@ -1,0 +1,10 @@
+@article{Desmarais:2011physa,
+Author = {Desmarais, Bruce A. and Skyler J. Cranmer},
+Title = {{Statistical Mechanics of Networks: Estimation and Uncertainty}},
+Journal = {{Physica A}},
+Year = {{2012}},
+number={4},
+volume = {391},
+pages = {1865--1876}
+}
+

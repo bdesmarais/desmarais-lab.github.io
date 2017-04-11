@@ -1,0 +1,6 @@
+@article{Desmarais:2010,
+Author = {Desmarais, Bruce A. and Skyler J. Cranmer},
+Title = {{Consistent Confidence Intervals for Maximum Pseudolikelihood Estimators}},
+Journal = {{Neural Information Processing Systems 2010 Workshop on Computational Social Science and the Wisdom of Crowds}},
+Year = {{2010}},
+}

@@ -1,0 +1,7 @@
+@article{Desmarais:2013qq,
+Author = {Desmarais, Bruce A. and Jeffrey J. Harden},
+Title = {{An Unbiased Model Comparison Test Using Cross-Validation}},
+Journal = {{Quality \& Quantity}},
+Year = {{Forthcoming}},
+}
+

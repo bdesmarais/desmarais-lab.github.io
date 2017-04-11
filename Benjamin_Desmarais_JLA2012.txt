@@ -1,0 +1,9 @@
+@article{Benjamin:2012,
+Author = {Benjamin, Stuart M. and Bruce A. Desmarais},
+Title = {{Standing the Test of Time; The Breadth of Majority Coalitions and the Fate of U.S. Supreme Court Precedents.}},
+Journal = {{Journal of Legal Analysis}},
+Year = {{2012}},
+volume = {4},
+number = {2},
+pages = {445--469},
+}

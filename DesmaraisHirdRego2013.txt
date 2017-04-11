@@ -1,0 +1,6 @@
+@article{Desmarais:2014,
+	Author = {Desmarais, Bruce A. and John A. Hird},
+	Title = {{Public Policy's Bibliography: The Use of Research in U.S. Regulatory Impact Analyses}},
+	Journal = {Regulation \& Governance},
+	Year = {{Accepted}}
+}

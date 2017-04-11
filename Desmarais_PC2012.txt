@@ -1,0 +1,10 @@
+@article{Desmarais:2012,
+Author = {Desmarais, Bruce A.},
+Title = {{Lessons in disguise: Multivariate predictive mistakes in collective choice models}},
+Journal = {{Public Choice}},
+Year = {{2012}},
+number={3},
+volume = {151},
+pages = {719--737}
+}
+

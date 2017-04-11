@@ -1,0 +1,36 @@
+a {text-decoration: none}
+
+a:link{ color: #BB0000; text-decoration: none }
+
+a:visited { color: #880000; text-decoration: none }
+
+a:hover { color: #FF0000; text-decoration: none }
+
+body{
+margin-left: 130px;
+color: #000000; 
+text-align:center;
+font-family: verdana; 
+font-size:8pt; 
+font-color:#000000;
+line-height:9pt;
+margin-right: 130px;}
+
+tr,td{
+font-family: verdana; 
+font-size:8pt; 
+font-color:#000000;
+line-height:9pt; }
+
+textarea { 
+font-family: verdana; 
+font-size:8pt; }
+
+div {margin: 20px 0px 10px 10px; }
+
+input {
+font-family: verdana; 
+font-size:8pt; }
+
+img { border-width: 0; }
+

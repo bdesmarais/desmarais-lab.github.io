@@ -1,0 +1,9 @@
+@article{Freeman:2011,
+Author = {Freeman, Allison T. and Bruce A. Desmarais},
+Title = {{Portfolio Adjustment to Home Equity Accumulation among CRA Borrowers}},
+Journal = {{Journal of Housing Research}},
+Year = {{2011}},
+number={2},
+volume = {20},
+pages = {141--160}
+}

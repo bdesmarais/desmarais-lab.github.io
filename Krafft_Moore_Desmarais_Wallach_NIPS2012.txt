@@ -1,0 +1,7 @@
+@conference{Krafft:2012,
+Author = {Krafft, Peter and Juston Moore and Hanna Wallach and Bruce Desmarais},
+Title = {{Topic-Partitioned Multinetwork Embeddings}},
+booktitle = {{Proceedings of the 26th Annual Conference on Neural Information Processing Systems}},
+Year = {{2012}},
+}
+

@@ -1,0 +1,11 @@
+@article{Desmarais:2011plos,
+    author = {Desmarais, , Bruce A. AND Cranmer, , Skyler J.},
+    journal = {PLoS ONE},
+    title = {Statistical Inference for Valued-Edge Networks: The Generalized Exponential Random Graph Model},
+    year = {2012},
+    month = {01},
+    volume = {7},
+    pages = {e30136},
+    number = {1}
+}        
+

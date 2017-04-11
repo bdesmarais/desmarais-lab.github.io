@@ -1,0 +1,10 @@
+@article{DesmaraisPSJ,
+	Author = {Desmarais, Bruce A. and Cranmer, Skyler J.},
+	Title = {Micro-Level Interpretation of Exponential Random Graph Models with Application to Estuary Networks},
+	Journal = {Policy Studies Journal},
+volume = {40},
+number = {3},
+pages = {402--434},
+Year = {{2012}}
+}
+
