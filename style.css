@@ -20,7 +20,7 @@ tr,td{
 font-family: verdana; 
 font-size:10pt;
 font-color:#000000;
-line-height:11pt; }
+line-height:11pt;}
 
 textarea { 
 font-family: verdana; 
@@ -60,5 +60,7 @@ dd {
 }
 
 tr.spaceUnder > td {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
 }
