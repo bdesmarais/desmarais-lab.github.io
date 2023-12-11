@@ -1,9 +1,0 @@
-@article{Cranmer:2011,
-Author = {Cranmer, Skyler J. and Bruce A. Desmarais},
-Title = {{Inferential Network Analysis with Exponential Random Graph Models}},
-Journal = {{Political Analysis}},
-volume = {19},
-number = {1},
-pages = {66--86},
-Year = {{2011}},
-}

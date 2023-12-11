@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: desmarais_cv.aux
+The style file: plain.bst
+Database file #1: vitabib.bib
+Warning--string name "forthcoming" is undefined
+--line 20 of file vitabib.bib
+Name 1 in "Janet Box-Steffensmeier, Dino Christenson, and Valeria Sinclair-Chapman" has a comma at the end for entry gopal2023chapter
+while executing---line 1090 of file plain.bst
+Warning--empty year in gopal2023chapter
+You've used 66 entries,
+            2118 wiz_defined-function locations,
+            916 strings with 17705 characters,
+and the built_in function-call counts, 23902 in all, are:
+= -- 2333
+> -- 1308
+< -- 8
++ -- 515
+- -- 442
+* -- 1857
+:= -- 4035
+add.period$ -- 205
+call.type$ -- 66
+change.case$ -- 411
+chr.to.int$ -- 0
+cite$ -- 67
+duplicate$ -- 807
+empty$ -- 1730
+format.name$ -- 442
+if$ -- 4872
+int.to.chr$ -- 0
+int.to.str$ -- 66
+missing$ -- 63
+newline$ -- 333
+num.names$ -- 138
+pop$ -- 359
+preamble$ -- 1
+purify$ -- 350
+quote$ -- 0
+skip$ -- 566
+stack$ -- 0
+substring$ -- 1502
+swap$ -- 139
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 262
+warning$ -- 1
+while$ -- 225
+width$ -- 68
+write$ -- 723
+(There was 1 error message)

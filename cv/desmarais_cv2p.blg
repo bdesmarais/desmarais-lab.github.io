@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: desmarais_cv2p.aux
+The style file: plain.bst
+Database file #1: vitabib.bib
+You've used 59 entries,
+            2118 wiz_defined-function locations,
+            870 strings with 16065 characters,
+and the built_in function-call counts, 21068 in all, are:
+= -- 2071
+> -- 1109
+< -- 9
++ -- 436
+- -- 372
+* -- 1595
+:= -- 3533
+add.period$ -- 183
+call.type$ -- 59
+change.case$ -- 356
+chr.to.int$ -- 0
+cite$ -- 59
+duplicate$ -- 740
+empty$ -- 1545
+format.name$ -- 372
+if$ -- 4332
+int.to.chr$ -- 0
+int.to.str$ -- 59
+missing$ -- 56
+newline$ -- 298
+num.names$ -- 122
+pop$ -- 311
+preamble$ -- 1
+purify$ -- 302
+quote$ -- 0
+skip$ -- 534
+stack$ -- 0
+substring$ -- 1318
+swap$ -- 145
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 234
+warning$ -- 0
+while$ -- 199
+width$ -- 61
+write$ -- 648

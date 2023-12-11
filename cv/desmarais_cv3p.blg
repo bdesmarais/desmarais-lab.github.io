@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: desmarais_cv3p.aux
+The style file: plain.bst
+Database file #1: vitabib.bib.bib
+You've used 56 entries,
+            2118 wiz_defined-function locations,
+            854 strings with 15324 characters,
+and the built_in function-call counts, 20100 in all, are:
+= -- 1986
+> -- 1030
+< -- 9
++ -- 405
+- -- 344
+* -- 1524
+:= -- 3350
+add.period$ -- 174
+call.type$ -- 56
+change.case$ -- 333
+chr.to.int$ -- 0
+cite$ -- 56
+duplicate$ -- 710
+empty$ -- 1494
+format.name$ -- 344
+if$ -- 4148
+int.to.chr$ -- 0
+int.to.str$ -- 56
+missing$ -- 53
+newline$ -- 283
+num.names$ -- 116
+pop$ -- 288
+preamble$ -- 1
+purify$ -- 282
+quote$ -- 0
+skip$ -- 513
+stack$ -- 0
+substring$ -- 1303
+swap$ -- 142
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 222
+warning$ -- 0
+while$ -- 193
+width$ -- 58
+write$ -- 618
