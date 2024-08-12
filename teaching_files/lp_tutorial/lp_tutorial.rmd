@@ -1,0 +1,105 @@
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Link Prediction Tutorial using the igraph package
+
+## Loading the Required Libraries
+
+```{r load-packages}
+library(ina)
+library(PRROC)
+library(network)
+library(intergraph)
+library(glmnet)
+```
+
+
+## read in data from ina package
+```{r}
+data(ScottishSchool)
+```
+
+## plot the network
+```{r}
+set.seed(83)
+plot(Girls,
+     vertex.col=c("black","grey30","grey75","white")[get.vertex.attribute(Girls,"drugs")],
+     vertex.sides=2+get.vertex.attribute(Girls,"smoke"),
+     edge.col="blue",
+     vertex.cex=2)
+
+diff.smoke <- as.matrix(dist(get.vertex.attribute(Girls,"smoke"),upper=T))
+diff.drugs <- as.matrix(dist(get.vertex.attribute(Girls,"drugs"),upper=T))
+```
+
+
+## create a network with missing edges
+```{r}
+GirlsNA <- Girls
+
+# take out some random values
+
+all_edges <- t(combn(1:nrow(GirlsNA[,]),2))
+all_edges <- rbind(all_edges,all_edges[,c(2,1)])
+
+test_edges <- all_edges[sample(1:nrow(all_edges),400),]
+
+# note that we zero them out, rather than adding missing values
+GirlsNA[test_edges] <- 0
+
+library(igraph)
+GirlsNA <- asIgraph(GirlsNA)
+
+```
+
+## Measure similarities
+```{r}
+# jaccard
+jac_sim <- similarity(GirlsNA)
+
+# adamic/adar
+aa_sim <- similarity(GirlsNA,method="invlogweighted")
+  
+```
+
+## Assemble data objects corresponding to missing values
+```{r predict-missing-values}
+true_value <- Girls[test_edges]
+jacsim_na <- jac_sim[test_edges]
+aasim_na <- aa_sim[test_edges]
+```
+
+## Evaluating the Predictions
+```{r evaluate-predictions}
+pr_jacsim <- pr.curve(jacsim_na[true_value==1],jacsim_na[true_value==0],curve=T)
+pr_aasim <- pr.curve(aasim_na[true_value==1],aasim_na[true_value==0],curve=T)
+
+plot(pr_jacsim,legend=F,main="",auc.main=F,color="blue")
+plot(pr_aasim,add=T,auc.main=F,color="red")
+legend("topright",legend=c("Jaccard","Adamic/Adar"),lty=c(1,1),col=c("blue","red"),lwd=2)
+
+```
+
+## Building ensemble to improve predictions?
+```{r evaluate-ensemble}
+y_foren <- Girls[,]
+y_foren[test_edges] <- NA
+diag(y_foren) <- NA
+y_foren <- c(y_foren)
+x_jacsim <- c(jac_sim)
+x_aa <- c(aa_sim)
+
+all_data <- as.matrix(cbind(y_foren,x_jacsim,x_aa))
+train_data <- all_data[!is.na(all_data[,1]), ]
+test_data <- all_data[is.na(all_data[,1]), ]
+
+fit.cv = cv.glmnet(train_data[,-1],train_data[,1],family=binomial())
+pred_en <- predict(fit.cv,newx= test_data[,-1],probability=T)
+
+pr_en <- pr.curve(pred_en[true_value==1],pred_en[true_value==0],curve=T)
+
+pr_en
+```
