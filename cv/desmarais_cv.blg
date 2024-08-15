@@ -1,52 +1,49 @@
-This is BibTeX, Version 0.99d (TeX Live 2023)
+This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: desmarais_cv.aux
 The style file: plain.bst
 Database file #1: vitabib.bib
-Warning--string name "forthcoming" is undefined
---line 20 of file vitabib.bib
 Name 1 in "Janet Box-Steffensmeier, Dino Christenson, and Valeria Sinclair-Chapman" has a comma at the end for entry gopal2023chapter
 while executing---line 1090 of file plain.bst
-Warning--empty year in gopal2023chapter
-You've used 66 entries,
+You've used 68 entries,
             2118 wiz_defined-function locations,
-            916 strings with 17705 characters,
-and the built_in function-call counts, 23902 in all, are:
-= -- 2333
-> -- 1308
+            925 strings with 18075 characters,
+and the built_in function-call counts, 24489 in all, are:
+= -- 2389
+> -- 1344
 < -- 8
-+ -- 515
-- -- 442
-* -- 1857
-:= -- 4035
-add.period$ -- 205
-call.type$ -- 66
-change.case$ -- 411
++ -- 529
+- -- 454
+* -- 1890
+:= -- 4141
+add.period$ -- 212
+call.type$ -- 68
+change.case$ -- 423
 chr.to.int$ -- 0
-cite$ -- 67
-duplicate$ -- 807
-empty$ -- 1730
-format.name$ -- 442
-if$ -- 4872
+cite$ -- 68
+duplicate$ -- 831
+empty$ -- 1775
+format.name$ -- 454
+if$ -- 4995
 int.to.chr$ -- 0
-int.to.str$ -- 66
-missing$ -- 63
-newline$ -- 333
-num.names$ -- 138
-pop$ -- 359
+int.to.str$ -- 68
+missing$ -- 65
+newline$ -- 343
+num.names$ -- 142
+pop$ -- 373
 preamble$ -- 1
-purify$ -- 350
+purify$ -- 360
 quote$ -- 0
-skip$ -- 566
+skip$ -- 580
 stack$ -- 0
-substring$ -- 1502
-swap$ -- 139
+substring$ -- 1512
+swap$ -- 142
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 262
-warning$ -- 1
-while$ -- 225
-width$ -- 68
-write$ -- 723
+type$ -- 270
+warning$ -- 0
+while$ -- 229
+width$ -- 70
+write$ -- 745
 (There was 1 error message)

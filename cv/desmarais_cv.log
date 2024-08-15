@@ -1,28 +1,28 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.19)  11 DEC 2023 09:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.16)  15 AUG 2024 19:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **desmarais_cv.tex
 (./desmarais_cv.tex
-LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-11>
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-03-14>
 (./res.cls
 Document Style `res' <26 Sep 89>.
 Document Class: res 2000/05/19 v1.4b Resume class
-(/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(/usr/local/texlive/2023/texmf-dist/tex/latex/base/size10.clo
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count185
-\c@section=\count186
-\c@subsection=\count187
-\c@subsubsection=\count188
-\c@paragraph=\count189
-\c@subparagraph=\count190
-\c@figure=\count191
-\c@table=\count192
+\c@part=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
@@ -36,52 +36,52 @@ File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \sectionskip=\skip50
 \resumewidth=\dimen142
 \@columnwidth=\dimen143
-\c@numberofcolumns=\count193
+\c@numberofcolumns=\count196
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifpdf.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-(/usr/local/texlive/2023/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks22
 \verbatim@line=\toks23
 \verbatim@in@stream=\read2
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip51
 \bibsep=\skip52
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count194
+\c@NAT@ctr=\count197
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/natbib/bibentry.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/natbib/bibentry.sty
 Package: bibentry 2007/10/30 1.5 (PWD)
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/etaremune/etaremune.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/etaremune/etaremune.sty
 Package: etaremune 2005/06/01 v1.2 Reversed enumerate (HA)
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks24
 \XKV@tempa@toks=\toks25
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/keyval.tex))
-\XKV@depth=\count195
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count198
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\c@EM@itemctr=\count196
-\c@EM@etaremunectr=\count197
+\c@EM@itemctr=\count199
+\c@EM@etaremunectr=\count266
 )
 (./desmarais_cv.bbl)
-(/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count198
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count267
 \l__pdf_internal_box=\box51
 )
 (./desmarais_cv.aux)
@@ -107,35 +107,35 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 35.
  [1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 
-Overfull \hbox (11.94737pt too wide) in paragraph at lines 149--150
+Overfull \hbox (11.94737pt too wide) in paragraph at lines 150--151
 []\OT1/cmr/m/n/10 Jeffrey J. Harden and Bruce A. Des-marais.  Lin-ear Mod-els w
 ith Out-liers: Choos-ing Be-tween Conditional-
  []
 
-[4] (./desmarais_cv.bbl) [5] [6] [7{/usr/local/texlive/2023/texmf-dist/fonts/en
+[4] (./desmarais_cv.bbl) [5] [6] [7{/usr/local/texlive/2024/texmf-dist/fonts/en
 c/dvips/cm-super/cm-super-ts1.enc}] [8] [9] [10] (./desmarais_cv.aux)
  ***********
-LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-11>
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1661 strings out of 475189
- 28555 string characters out of 5763832
- 1930254 words of memory out of 5000000
- 22984 multiletter control sequences out of 15000+600000
+ 1665 strings out of 474104
+ 28637 string characters out of 5743467
+ 1938493 words of memory out of 5000000
+ 24069 multiletter control sequences out of 15000+600000
  559831 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,8n,52p,834b,376s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></u
-sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></us
-r/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on desmarais_cv.pdf (10 pages, 121302 bytes).
+ 49i,8n,52p,834b,384s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></us
+r/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on desmarais_cv.pdf (10 pages, 122302 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
