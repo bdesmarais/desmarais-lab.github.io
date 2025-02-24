@@ -31,20 +31,20 @@ Ahana Biswas, Yu-Ru Lin, Yuehong~Cassandra Tai, and Bruce~A Desmarais.
 \newblock In {\em 19th International Conference on Web and Social Media, ICWSM
   2025}. AAAI Press, Accepted.
 
-\bibitem{BoehmkeSDATA}
-Frederick Boehmke, Bruce Desmarais, Abbie Eastman, Isabelle Grassel, Jeffrey
-  Harden, Samuel Harper, Liam Kaboli, Hyein Ko, Elisabeth Oster, and Tracee
-  Saunders.
-\newblock {SPRC19: A Database of State Policy Responses to COVID-19 in the
-  United States}.
-\newblock {\em {Nature Scientific Data}}, {Accepted}.
-
 \bibitem{boehmke2020spid}
 Frederick~J Boehmke, Mark Brockway, Bruce~A Desmarais, Jeffrey~J Harden, Scott
   LaCombe, Fridolin Linder, and Hanna Wallach.
 \newblock Spid: A new database for inferring public policy innovativeness and
   diffusion networks.
 \newblock {\em Policy Studies Journal}, 48(2):517--545, 2020.
+
+\bibitem{BoehmkeSDATA}
+Frederick~J Boehmke, Bruce~A Desmarais, Abbie Eastman, Isabelle Grassel,
+  Jeffrey~J Harden, Samuel Harper, Liam Kaboli, Hyein Ko, Elisabeth Oster, and
+  Tracee~M Saunders.
+\newblock Sprc19: A database of state policy responses to covid-19 in the
+  united states.
+\newblock {\em Scientific data}, 10(1):526, 2023.
 
 \bibitem{boehmke2017seeds}
 Frederick~J Boehmke, Abigail~Matthews Rury, Bruce~A Desmarais, and Jeffrey~J
@@ -256,8 +256,7 @@ Ishita Gopal and Bruce~A. Desmarais.
 Ishita Gopal, Taegyoon Kim, Nitheesha Nakka, Frederick~J. Boehmke, Jeffrey~J.
   Harden, and Bruce~A. Desmarais.
 \newblock {The National Network of U.S. State Legislators on Twitter}.
-\newblock {\em {Political Science Research \& Methods}}, {Conditionally
-  Accepted}.
+\newblock {\em {Political Science Research \& Methods}}, {Accepted}.
 
 \bibitem{Harden:2011}
 Jeffrey~J. Harden and Bruce~A. Desmarais.
@@ -266,10 +265,10 @@ Jeffrey~J. Harden and Bruce~A. Desmarais.
 \newblock {\em {State Politics \& Policy Quarterly}}, 11(4):371--389, {2011}.
 
 \bibitem{hardenJOP}
-Jeffrey~J. Harden, Bruce~A. Desmarais, Mark Brockway, Frederick~J. Boehmke,
-  Scott~J. LaCombe, Fridolin Linder, and Hanna Wallach.
-\newblock {A Diffusion Network Event History Estimator}.
-\newblock {\em {The Journal of Politics}}, {Forthcoming}.
+Jeffrey~J Harden, Bruce~A Desmarais, Mark Brockway, Frederick~J Boehmke,
+  Scott~J LaCombe, Fridolin Linder, and Hanna Wallach.
+\newblock A diffusion network event history estimator.
+\newblock {\em The Journal of politics}, 85(2):436--452, 2023.
 
 \bibitem{KimPSRM}
 Sangyeon Kim, Howard Liu, and Bruce Desmarais.
@@ -345,6 +344,13 @@ Sayali Phadke and Bruce~A Desmarais.
   experiments on state legislatures.
 \newblock {\em State Politics \& Policy Quarterly}, 19(4):451--473, 2019.
 
+\bibitem{pollertPSJ}
+Issac Pollert, Johabed Olvera, Bruce~A. Desmarais, Frederick~J. Boehmke, and
+  Jeffrey~J. Harden.
+\newblock Collaborative diffusion: The dynamics of policy output in covid-19
+  interstate compacts.
+\newblock {\em Policy Studies Journal}, Accepted.
+
 \bibitem{schmid2017}
 C.~S. Schmid and B.~A. Desmarais.
 \newblock Exponential random graph models with big networks: Maximum
@@ -398,10 +404,11 @@ Paul~E Stillman, James~D Wilson, Matthew~J Denny, Bruce~A Desmarais, Skyler~J
 \newblock {\em NeuroImage}, 197:24--36, 2019.
 
 \bibitem{TaiJITP}
-Yuehong~Cassandra Tai, Roan Buma, and Bruce Desmarais.
-\newblock Official yet questionable: Examining misinformation in u.s. state
+Yuehong~Cassandra Tai, Roan Buma, and Bruce~A Desmarais.
+\newblock Official yet questionable: examining misinformation in us state
   legislators’ tweets.
-\newblock {\em Journal of Information Technology \& Politics}, Accepted.
+\newblock {\em Journal of Information Technology \& Politics}, 21(4):597--609,
+  2024.
 
 \bibitem{tai2025genai}
 Yuehong~Cassandra Tai, Khushi Navin~Patni, Nicholas~Daniel Hemauer, Bruce
@@ -411,10 +418,10 @@ Yuehong~Cassandra Tai, Khushi Navin~Patni, Nicholas~Daniel Hemauer, Bruce
   Conference}, Accepted.
 
 \bibitem{MedhaPA}
-Medha Uppala and Bruce~A. Desmarais.
-\newblock {Contagion, Confounding, and Causality: Confronting the Three C's of
-  Observational Political Networks Research}.
-\newblock {\em {Political Analysis}}, {Accepted}.
+Medha Uppala and Bruce~A Desmarais.
+\newblock Contagion, confounding, and causality: Confronting the three c’s of
+  observational political networks research.
+\newblock {\em Political Analysis}, 31(3):472--479, 2023.
 
 \bibitem{Wilson:2017}
 James~D. Wilson, Matthew~J. Denny, Shankar Bhamidi, Skyler~J. Cranmer, and
